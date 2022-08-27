@@ -312,6 +312,16 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\ModelOnline.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelOnline.edmx</DependentUpon>
+      <LastGenOutput>ModelOnline.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ModelOnline.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelOnline.edmx</DependentUpon>
+      <LastGenOutput>ModelOnline.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -395,6 +405,13 @@
     <Content Include="Content\assets\scss\_whats-new.scss" />
     <Content Include="Content\assets\scss\_youtube.scss" />
     <Content Include="Content\assets\scss\style.scss" />
+    <EntityDeploy Include="Models\ModelOnline.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelOnline.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ModelOnline.edmx.diagram">
+      <DependentUpon>ModelOnline.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />
     <Content Include="Scripts\jquery-3.5.1.min.js" />
@@ -406,190 +423,6 @@
     <Content Include="Scripts\js\jquery.dataTables.min.js" />
     <Content Include="Scripts\js\script.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Views\assets\css\animate.min.css" />
-    <Content Include="Views\assets\css\bootstrap.min.css" />
-    <Content Include="Views\assets\css\flaticon.css" />
-    <Content Include="Views\assets\css\fontawesome-all.min.css" />
-    <Content Include="Views\assets\css\gijgo.css" />
-    <Content Include="Views\assets\css\magnific-popup.css" />
-    <Content Include="Views\assets\css\main.css" />
-    <Content Include="Views\assets\css\nice-select.css" />
-    <Content Include="Views\assets\css\owl.carousel.min.css" />
-    <Content Include="Views\assets\css\responsive.css" />
-    <Content Include="Views\assets\css\slick.css" />
-    <Content Include="Views\assets\css\slicknav.css" />
-    <Content Include="Views\assets\css\style.css" />
-    <Content Include="Views\assets\css\themify-icons.css" />
-    <Content Include="Views\assets\css\ticker-style.css" />
-    <Content Include="Views\assets\fonts\fa-brands-400.svg" />
-    <Content Include="Views\assets\fonts\fa-regular-400.svg" />
-    <Content Include="Views\assets\fonts\fa-solid-900.svg" />
-    <Content Include="Views\assets\fonts\flaticon.css" />
-    <Content Include="Views\assets\fonts\flaticon.html" />
-    <Content Include="Views\assets\fonts\Flaticon.svg" />
-    <Content Include="Views\assets\fonts\themify.svg" />
-    <Content Include="Views\assets\img\about\about_lft.png" />
-    <Content Include="Views\assets\img\about\about_right.png" />
-    <Content Include="Views\assets\img\about\pet_care.png" />
-    <Content Include="Views\assets\img\adapt_icon\1.png" />
-    <Content Include="Views\assets\img\adapt_icon\1.svg" />
-    <Content Include="Views\assets\img\adapt_icon\2.png" />
-    <Content Include="Views\assets\img\adapt_icon\3.png" />
-    <Content Include="Views\assets\img\banner\dog.png" />
-    <Content Include="Views\assets\img\banner\img.png" />
-    <Content Include="Views\assets\img\blog\author.png" />
-    <Content Include="Views\assets\img\blog\blog_4.png" />
-    <Content Include="Views\assets\img\blog\learn_about_bg.png" />
-    <Content Include="Views\assets\img\blog\single_blog_1.png" />
-    <Content Include="Views\assets\img\blog\single_blog_2.png" />
-    <Content Include="Views\assets\img\blog\single_blog_3.png" />
-    <Content Include="Views\assets\img\blog\single_blog_4.png" />
-    <Content Include="Views\assets\img\blog\single_blog_5.png" />
-    <Content Include="Views\assets\img\blog\slide_thumb_1.png" />
-    <Content Include="Views\assets\img\comment\comment_1.png" />
-    <Content Include="Views\assets\img\comment\comment_2.png" />
-    <Content Include="Views\assets\img\comment\comment_3.png" />
-    <Content Include="Views\assets\img\elements\a.jpg" />
-    <Content Include="Views\assets\img\elements\a2.jpg" />
-    <Content Include="Views\assets\img\elements\d.jpg" />
-    <Content Include="Views\assets\img\elements\disabled-check.png" />
-    <Content Include="Views\assets\img\elements\disabled-radio.png" />
-    <Content Include="Views\assets\img\elements\f1.jpg" />
-    <Content Include="Views\assets\img\elements\f2.jpg" />
-    <Content Include="Views\assets\img\elements\f3.jpg" />
-    <Content Include="Views\assets\img\elements\f4.jpg" />
-    <Content Include="Views\assets\img\elements\f5.jpg" />
-    <Content Include="Views\assets\img\elements\f6.jpg" />
-    <Content Include="Views\assets\img\elements\f7.jpg" />
-    <Content Include="Views\assets\img\elements\f8.jpg" />
-    <Content Include="Views\assets\img\elements\g1.jpg" />
-    <Content Include="Views\assets\img\elements\g2.jpg" />
-    <Content Include="Views\assets\img\elements\g3.jpg" />
-    <Content Include="Views\assets\img\elements\g4.jpg" />
-    <Content Include="Views\assets\img\elements\g5.jpg" />
-    <Content Include="Views\assets\img\elements\g6.jpg" />
-    <Content Include="Views\assets\img\elements\g7.jpg" />
-    <Content Include="Views\assets\img\elements\g8.jpg" />
-    <Content Include="Views\assets\img\elements\primary-check.png" />
-    <Content Include="Views\assets\img\elements\primary-radio.png" />
-    <Content Include="Views\assets\img\elements\success-check.png" />
-    <Content Include="Views\assets\img\elements\success-radio.png" />
-    <Content Include="Views\assets\img\favicon.ico" />
-    <Content Include="Views\assets\img\gallery\1.png" />
-    <Content Include="Views\assets\img\gallery\2.png" />
-    <Content Include="Views\assets\img\gallery\3.png" />
-    <Content Include="Views\assets\img\hero\h1_hero.jpg" />
-    <Content Include="Views\assets\img\hero\header_card.jpg" />
-    <Content Include="Views\assets\img\icon\header_icon1.png" />
-    <Content Include="Views\assets\img\icon\header_icon2.png" />
-    <Content Include="Views\assets\img\logo\form-iocn.jpg" />
-    <Content Include="Views\assets\img\logo\form-iocn.png" />
-    <Content Include="Views\assets\img\logo\logo.png" />
-    <Content Include="Views\assets\img\logo\logo2_footer.png" />
-    <Content Include="Views\assets\img\news\icon-fb.png" />
-    <Content Include="Views\assets\img\news\icon-ins.png" />
-    <Content Include="Views\assets\img\news\icon-tw.png" />
-    <Content Include="Views\assets\img\news\icon-yo.png" />
-    <Content Include="Views\assets\img\news\news_card.jpg" />
-    <Content Include="Views\assets\img\news\recent1.jpg" />
-    <Content Include="Views\assets\img\news\recent2.jpg" />
-    <Content Include="Views\assets\img\news\recent3.jpg" />
-    <Content Include="Views\assets\img\news\video_overly1.jpg" />
-    <Content Include="Views\assets\img\news\weekly2News1.jpg" />
-    <Content Include="Views\assets\img\news\weekly2News2.jpg" />
-    <Content Include="Views\assets\img\news\weekly2News3.jpg" />
-    <Content Include="Views\assets\img\news\weekly2News4.jpg" />
-    <Content Include="Views\assets\img\news\weeklyNews1.jpg" />
-    <Content Include="Views\assets\img\news\weeklyNews2.jpg" />
-    <Content Include="Views\assets\img\news\weeklyNews3.jpg" />
-    <Content Include="Views\assets\img\news\whatNews1.jpg" />
-    <Content Include="Views\assets\img\news\whatNews2.jpg" />
-    <Content Include="Views\assets\img\news\whatNews3.jpg" />
-    <Content Include="Views\assets\img\news\whatNews4.jpg" />
-    <Content Include="Views\assets\img\offers\1.png" />
-    <Content Include="Views\assets\img\offers\2.png" />
-    <Content Include="Views\assets\img\offers\3.png" />
-    <Content Include="Views\assets\img\our_blog\blog-img1.jpg" />
-    <Content Include="Views\assets\img\post\about_heor.jpg" />
-    <Content Include="Views\assets\img\post\instra1.jpg" />
-    <Content Include="Views\assets\img\post\instra2.jpg" />
-    <Content Include="Views\assets\img\post\instra3.jpg" />
-    <Content Include="Views\assets\img\post\instra4.jpg" />
-    <Content Include="Views\assets\img\post\instra5.jpg" />
-    <Content Include="Views\assets\img\post\instra6.jpg" />
-    <Content Include="Views\assets\img\post\next.png" />
-    <Content Include="Views\assets\img\post\post_1.png" />
-    <Content Include="Views\assets\img\post\post_10.png" />
-    <Content Include="Views\assets\img\post\post_2.png" />
-    <Content Include="Views\assets\img\post\post_3.png" />
-    <Content Include="Views\assets\img\post\post_4.png" />
-    <Content Include="Views\assets\img\post\post_5.png" />
-    <Content Include="Views\assets\img\post\post_6.png" />
-    <Content Include="Views\assets\img\post\post_7.png" />
-    <Content Include="Views\assets\img\post\post_8.png" />
-    <Content Include="Views\assets\img\post\post_9.png" />
-    <Content Include="Views\assets\img\post\preview.png" />
-    <Content Include="Views\assets\img\prising\1.png" />
-    <Content Include="Views\assets\img\prising\10.png" />
-    <Content Include="Views\assets\img\prising\2.png" />
-    <Content Include="Views\assets\img\prising\3.png" />
-    <Content Include="Views\assets\img\prising\4.png" />
-    <Content Include="Views\assets\img\prising\5.png" />
-    <Content Include="Views\assets\img\prising\6.png" />
-    <Content Include="Views\assets\img\prising\7.png" />
-    <Content Include="Views\assets\img\prising\8.png" />
-    <Content Include="Views\assets\img\prising\9.png" />
-    <Content Include="Views\assets\img\service\1.png" />
-    <Content Include="Views\assets\img\service\2.png" />
-    <Content Include="Views\assets\img\service\3.png" />
-    <Content Include="Views\assets\img\service\completed_case_1.png" />
-    <Content Include="Views\assets\img\service\completed_case_2.png" />
-    <Content Include="Views\assets\img\service\completed_case_3.png" />
-    <Content Include="Views\assets\img\service\completed_case_4.png" />
-    <Content Include="Views\assets\img\service\completed_case_5.png" />
-    <Content Include="Views\assets\img\service\completed_case_6.png" />
-    <Content Include="Views\assets\img\service\services_bg.png" />
-    <Content Include="Views\assets\img\service\service_icon_1.png" />
-    <Content Include="Views\assets\img\service\service_icon_2.png" />
-    <Content Include="Views\assets\img\service\service_icon_3.png" />
-    <Content Include="Views\assets\img\service\service_icon_bg_1.png" />
-    <Content Include="Views\assets\img\team\1.png" />
-    <Content Include="Views\assets\img\team\2.png" />
-    <Content Include="Views\assets\img\team\3.png" />
-    <Content Include="Views\assets\img\trending\right1.jpg" />
-    <Content Include="Views\assets\img\trending\right2.jpg" />
-    <Content Include="Views\assets\img\trending\right3.jpg" />
-    <Content Include="Views\assets\img\trending\right4.jpg" />
-    <Content Include="Views\assets\img\trending\right5.jpg" />
-    <Content Include="Views\assets\img\trending\trending_bottom1.jpg" />
-    <Content Include="Views\assets\img\trending\trending_bottom2.jpg" />
-    <Content Include="Views\assets\img\trending\trending_bottom3.jpg" />
-    <Content Include="Views\assets\img\trending\trending_top.jpg" />
-    <Content Include="Views\assets\js\animated.headline.js" />
-    <Content Include="Views\assets\js\bootstrap.min.js" />
-    <Content Include="Views\assets\js\contact.js" />
-    <Content Include="Views\assets\js\gijgo.min.js" />
-    <Content Include="Views\assets\js\jquery.ajaxchimp.min.js" />
-    <Content Include="Views\assets\js\jquery.form.js" />
-    <Content Include="Views\assets\js\jquery.magnific-popup.js" />
-    <Content Include="Views\assets\js\jquery.nice-select.min.js" />
-    <Content Include="Views\assets\js\jquery.paroller.min.js" />
-    <Content Include="Views\assets\js\jquery.scrollUp.min.js" />
-    <Content Include="Views\assets\js\jquery.slicknav.min.js" />
-    <Content Include="Views\assets\js\jquery.sticky.js" />
-    <Content Include="Views\assets\js\jquery.ticker.js" />
-    <Content Include="Views\assets\js\jquery.validate.min.js" />
-    <Content Include="Views\assets\js\mail-script.js" />
-    <Content Include="Views\assets\js\main.js" />
-    <Content Include="Views\assets\js\one-page-nav-min.js" />
-    <Content Include="Views\assets\js\owl.carousel.min.js" />
-    <Content Include="Views\assets\js\plugins.js" />
-    <Content Include="Views\assets\js\popper.min.js" />
-    <Content Include="Views\assets\js\site.js" />
-    <Content Include="Views\assets\js\slick.min.js" />
-    <Content Include="Views\assets\js\vendor\jquery-1.12.4.min.js" />
-    <Content Include="Views\assets\js\vendor\modernizr-3.5.0.min.js" />
-    <Content Include="Views\assets\js\wow.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -599,6 +432,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AjaxController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PublicController.cs" />
     <Compile Include="Global.asax.cs">
@@ -619,10 +453,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\ModelOnline.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelOnline.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModelOnline.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelOnline.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModelOnline.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelOnline.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\MyPostCollection.cs" />
     <Compile Include="Models\PostTable.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Post_Master.cs">
+      <DependentUpon>ModelOnline.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vm_MyPostCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -635,53 +488,6 @@
     <Content Include="Scripts\jquery-3.5.1.min.map" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Public\Index.cshtml" />
-    <Content Include="Views\assets\css\main.map" />
-    <Content Include="Views\assets\css\style.map" />
-    <Content Include="Views\assets\fonts\fa-brands-400.eot" />
-    <Content Include="Views\assets\fonts\fa-brands-400.ttf" />
-    <Content Include="Views\assets\fonts\fa-brands-400.woff" />
-    <Content Include="Views\assets\fonts\fa-brands-400.woff2" />
-    <Content Include="Views\assets\fonts\fa-regular-400.eot" />
-    <Content Include="Views\assets\fonts\fa-regular-400.ttf" />
-    <Content Include="Views\assets\fonts\fa-regular-400.woff" />
-    <Content Include="Views\assets\fonts\fa-regular-400.woff2" />
-    <Content Include="Views\assets\fonts\fa-solid-900.eot" />
-    <Content Include="Views\assets\fonts\fa-solid-900.ttf" />
-    <Content Include="Views\assets\fonts\fa-solid-900.woff" />
-    <Content Include="Views\assets\fonts\fa-solid-900.woff2" />
-    <Content Include="Views\assets\fonts\Flaticon.eot" />
-    <Content Include="Views\assets\fonts\Flaticon.ttf" />
-    <Content Include="Views\assets\fonts\Flaticon.woff" />
-    <Content Include="Views\assets\fonts\Flaticon.woff2" />
-    <Content Include="Views\assets\fonts\themify.eot" />
-    <Content Include="Views\assets\fonts\themify.ttf" />
-    <Content Include="Views\assets\fonts\themify.woff" />
-    <Content Include="Views\assets\scss\style.scss" />
-    <Content Include="Views\assets\scss\_about-page.scss" />
-    <Content Include="Views\assets\scss\_blog.scss" />
-    <Content Include="Views\assets\scss\_blog_page.scss" />
-    <Content Include="Views\assets\scss\_bradcam.scss" />
-    <Content Include="Views\assets\scss\_color.scss" />
-    <Content Include="Views\assets\scss\_common.scss" />
-    <Content Include="Views\assets\scss\_completed-cases.scss" />
-    <Content Include="Views\assets\scss\_contact.scss" />
-    <Content Include="Views\assets\scss\_elements.scss" />
-    <Content Include="Views\assets\scss\_extend.scss" />
-    <Content Include="Views\assets\scss\_footer.scss" />
-    <Content Include="Views\assets\scss\_headerMenu.scss" />
-    <Content Include="Views\assets\scss\_mixins.scss" />
-    <Content Include="Views\assets\scss\_overlay.scss" />
-    <Content Include="Views\assets\scss\_recent-articles.scss" />
-    <Content Include="Views\assets\scss\_services.scss" />
-    <Content Include="Views\assets\scss\_services_section.scss" />
-    <Content Include="Views\assets\scss\_team.scss" />
-    <Content Include="Views\assets\scss\_testimonial.scss" />
-    <Content Include="Views\assets\scss\_trending.scss" />
-    <Content Include="Views\assets\scss\_variables.scss" />
-    <Content Include="Views\assets\scss\_wecky-new.scss" />
-    <Content Include="Views\assets\scss\_wecky2-new.scss" />
-    <Content Include="Views\assets\scss\_whats-new.scss" />
-    <Content Include="Views\assets\scss\_youtube.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -691,6 +497,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="UploadedImages\" />
+    <Folder Include="Views\Ajax\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
